@@ -1,0 +1,40 @@
+:root { --ink: #1d2430; --paper: #f6f7fb; --accent: #2f5fd0; --warn: #b5530f; --line: #d8dce6; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+header { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #fff; border-bottom: 1px solid var(--line); }
+h1 { font-size: 18px; margin: 0; }
+h2 { font-size: 15px; margin: 0 0 10px; }
+h3 { font-size: 13px; margin: 14px 0 6px; color: #555; }
+.run-meta { display: flex; gap: 14px; align-items: center; font-size: 13px; }
+a { color: var(--accent); text-decoration: none; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 14px 20px; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.panel.wide { grid-column: 1 / -1; }
+form { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+label { display: flex; flex-direction: column; font-size: 12px; color: #555; gap: 4px; }
+label.grow { flex: 1; min-width: 260px; }
+input, select, textarea { font: inherit; padding: 7px 9px; border: 1px solid var(--line); border-radius: 7px; }
+textarea { width: 100%; font-family: ui-monospace, monospace; font-size: 12px; }
+button { font: inherit; padding: 8px 14px; border: 0; border-radius: 7px; background: var(--accent); color: #fff; cursor: pointer; }
+button.warn { background: var(--warn); }
+button.ghost { background: #eef1f8; color: var(--ink); }
+.row { display: flex; gap: 10px; margin-top: 10px; align-items: center; }
+.hint { font-size: 12px; color: #666; }
+.chip { display: inline-block; padding: 3px 9px; margin: 3px; border-radius: 999px; background: #eef1f8; font-size: 12px; }
+.chip.amb { background: #fdecd8; }
+.chip.end { background: #e2f3e6; }
+.screen-card { border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+.screen-card .stage { background: #11151c; color: #ffe9a8; border-radius: 6px; padding: 12px; min-height: 64px; font-size: 18px; }
+.sline { white-space: pre-wrap; }
+.sline.blank { color: #6b7280; font-size: 14px; }
+pre { background: #0f1420; color: #cfe0ff; padding: 12px; border-radius: 8px; font-size: 12px; max-height: 260px; overflow: auto; margin: 0; }
+.amb-card { border: 1px solid #e4b07a; background: #fdf4e8; border-radius: 8px; padding: 8px 10px; margin: 6px 0; }
+.amb-card button { margin-top: 6px; }
+.bad { color: #b3261e; font-weight: 600; }
+.ok { color: #1d7a36; font-weight: 600; }
+
+/* 投屏页 */
+.screen-body { background: #0b0e14; height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.screen { width: min(92vw, 900px); background: #11151c; border: 2px solid #2a3140; border-radius: 12px; padding: 26px; text-align: center; }
+.screen .sline { color: #ffe9a8; font-size: clamp(26px, 5vw, 44px); line-height: 1.35; }
+.screen-meta { color: #7d8aa3; font-size: 12px; margin-top: 16px; }

@@ -1,6 +1,6 @@
 {
   "name": "live-surtitles-desk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -8,6 +8,10 @@
   },
   "scripts": {
     "inspect:data": "node scripts/inspect.mjs",
+    "serve": "node cli/serve.mjs data/sample-show.json",
+    "run:show": "node cli/run-show.mjs data/sample-show.json",
+    "run:legacy": "node cli/run-show.mjs data/inputs.json",
+    "review": "node cli/review.mjs",
     "test": "node --test"
   }
 }

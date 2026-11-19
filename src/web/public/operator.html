@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>字幕工作台 · 控制台</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <h1>现场字幕工作台</h1>
+  <div class="run-meta">
+    <span id="runId"></span>
+    <a href="/screen.html?device=side-zh" target="_blank">中文投屏 ↗</a>
+    <a href="/screen.html?device=side-en" target="_blank">英文投屏 ↗</a>
+  </div>
+</header>
+
+<main class="grid">
+  <section class="panel">
+    <h2>输入提示（字幕员听辨后手动录入）</h2>
+    <form id="cueForm">
+      <label>类型
+        <select name="kind">
+          <option value="heard">听到的台词</option>
+          <option value="director">舞监提示</option>
+        </select>
+      </label>
+      <label class="grow">内容
+        <input name="text" placeholder="听到的实际说法，或 skip sec-x / take s3 / encore s1 / blank" required>
+      </label>
+      <label>人物（可选，用于缩小同句歧义）
+        <input name="speaker" placeholder="如 甲 / 乙">
+      </label>
+      <button type="submit">读入</button>
+    </form>
+    <div class="row">
+      <button id="blankBtn" class="warn">请求空屏</button>
+      <button id="tickBtn">推进停留计时</button>
+    </div>
+  </section>
+
+  <section class="panel" id="ambiguityPanel" hidden>
+    <h2>⚠ 位置无法唯一确定</h2>
+    <p>听到：<b id="ambHeard"></b></p>
+    <p class="hint">只有所有候选位置都允许且意思相同的内容才会继续显示；无交集时投屏保持旧画面或空屏。请人工确认当前位置：</p>
+    <div id="ambCandidates"></div>
+  </section>
+
+  <section class="panel">
+    <h2>当前可能位置（前沿）</h2>
+    <div id="frontier"></div>
+    <h3>已确认台词</h3>
+    <ol id="spoken"></ol>
+  </section>
+
+  <section class="panel">
+    <h2>投屏预览（受行宽/行数/最短停留约束）</h2>
+    <div id="screens"></div>
+  </section>
+
+  <section class="panel wide">
+    <h2>引擎事件流水</h2>
+    <pre id="log"></pre>
+  </section>
+
+  <section class="panel wide">
+    <h2>稿本修订切换（编辑未来句子期间，现场仍用已批准稿本）</h2>
+    <p class="hint">粘贴完整新稿 JSON。找不回当前台词、已批准译文缺失或 meaningId 漂移时将拒绝切换并保留当前安全稿本。</p>
+    <textarea id="revisionJson" rows="6" placeholder='{"version":...}'></textarea>
+    <div class="row">
+      <button id="revisionBtn">检查并切换</button>
+      <span id="revisionResult" class="hint"></span>
+    </div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

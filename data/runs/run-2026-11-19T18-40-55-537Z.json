@@ -1,0 +1,208 @@
+{
+  "runId": "run-2026-11-19T18-40-55-537Z",
+  "branchOf": null,
+  "version": "untitled",
+  "revision": 1,
+  "cues": [
+    {
+      "at": 1200,
+      "kind": "heard",
+      "text": "钥匙在这儿。"
+    },
+    {
+      "at": 2080,
+      "kind": "heard",
+      "text": "钥匙在这里。"
+    },
+    {
+      "at": 2890,
+      "kind": "director",
+      "text": "门厅乙句略过，直接开灯。"
+    }
+  ],
+  "engineLog": [
+    {
+      "seq": 0,
+      "type": "heard-unmatched",
+      "at": 1200,
+      "heard": "钥匙在这儿。",
+      "frontier": [
+        "s1"
+      ]
+    },
+    {
+      "seq": 1,
+      "type": "line-confirmed",
+      "at": 2080,
+      "lineId": "s1",
+      "occurrenceNo": 1,
+      "heard": "钥匙在这里。",
+      "shortForm": null,
+      "scene": "门厅",
+      "speaker": "甲"
+    },
+    {
+      "seq": 2,
+      "type": "publish",
+      "at": 2080,
+      "renderSeq": 1,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E1:0:E1#0",
+              "itemKey": "E1:0:E1",
+              "renderSeq": 1,
+              "text": "Here is the key.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "Here is the key."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s1:1#0",
+              "itemKey": "zh:s1:1",
+              "renderSeq": 1,
+              "text": "钥匙在这里。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "钥匙在这里。"
+              ],
+              "sourceLine": "s1"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 3,
+      "type": "director-unknown",
+      "at": 2890,
+      "text": "门厅乙句略过，直接开灯。",
+      "reason": "段落 null 不存在"
+    }
+  ],
+  "scheduler": {
+    "side-en": {
+      "history": [
+        {
+          "frameId": "E1:0:E1#0",
+          "itemKey": "E1:0:E1",
+          "text": "Here is the key.",
+          "lines": [
+            "Here is the key."
+          ],
+          "shownAt": 2080,
+          "minHoldMs": 1100
+        }
+      ],
+      "dropped": [],
+      "finalFrame": {
+        "frameId": "E1:0:E1#0",
+        "text": "Here is the key."
+      }
+    },
+    "side-zh": {
+      "history": [
+        {
+          "frameId": "zh:s1:1#0",
+          "itemKey": "zh:s1:1",
+          "text": "钥匙在这里。",
+          "lines": [
+            "钥匙在这里。"
+          ],
+          "shownAt": 2080,
+          "minHoldMs": 900
+        }
+      ],
+      "dropped": [],
+      "finalFrame": {
+        "frameId": "zh:s1:1#0",
+        "text": "钥匙在这里。"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "at": 2080,
+      "kind": "publish",
+      "eventSeq": 2,
+      "updates": [
+        {
+          "deviceId": "side-en",
+          "at": 2080,
+          "frame": {
+            "frameId": "E1:0:E1#0",
+            "itemKey": "E1:0:E1",
+            "renderSeq": 1,
+            "text": "Here is the key.",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "Here is the key."
+            ],
+            "sourceLine": null,
+            "enqueuedAt": 2080,
+            "blockedReasons": []
+          }
+        },
+        {
+          "deviceId": "side-zh",
+          "at": 2080,
+          "frame": {
+            "frameId": "zh:s1:1#0",
+            "itemKey": "zh:s1:1",
+            "renderSeq": 1,
+            "text": "钥匙在这里。",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "钥匙在这里。"
+            ],
+            "sourceLine": "s1",
+            "enqueuedAt": 2080,
+            "blockedReasons": []
+          }
+        }
+      ]
+    }
+  ],
+  "finalState": {
+    "runId": "run-2026-11-19T18-40-55-537Z",
+    "branchOf": null,
+    "ended": false,
+    "frontier": [
+      "s2",
+      "s3"
+    ],
+    "activeSpoken": [
+      "s1"
+    ],
+    "blockedEdges": [],
+    "spoken": [
+      {
+        "lineId": "s1",
+        "occurrenceNo": 1,
+        "heard": "钥匙在这里。",
+        "at": 2080,
+        "shortForm": null
+      }
+    ],
+    "ambiguity": null,
+    "revisionNotes": []
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "version": "show-sample",
+  "revision": 1,
+  "script": [
+    {
+      "id": "s1",
+      "scene": "门厅",
+      "speaker": "甲",
+      "text": "钥匙在这里。",
+      "variants": ["钥匙在这儿。"],
+      "next": ["s2", "s3"]
+    },
+    {
+      "id": "s2",
+      "scene": "门厅",
+      "speaker": "乙",
+      "text": "不是我拿的。钥匙在这里。",
+      "shortForms": ["不是我。"],
+      "next": ["s4"]
+    },
+    {
+      "id": "s3",
+      "scene": "门厅",
+      "speaker": "甲",
+      "text": "开灯就能看见。",
+      "next": ["s4"]
+    },
+    {
+      "id": "s4",
+      "scene": "后场",
+      "speaker": "乙",
+      "text": "钥匙在这里。",
+      "variants": ["钥匙在这儿。"],
+      "next": ["s5"]
+    },
+    {
+      "id": "s5",
+      "scene": "后场",
+      "speaker": "甲",
+      "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+      "next": ["s6"]
+    },
+    {
+      "id": "s6",
+      "scene": "后场",
+      "speaker": "乙",
+      "text": "终场。",
+      "next": ["s1"]
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-deny",
+      "title": "乙的否认段（可跳过）",
+      "lines": ["s2"],
+      "entry": ["s1"],
+      "exits": [
+        { "from": "s1", "to": "s2" },
+        { "from": "s1", "to": "s3" }
+      ]
+    }
+  ],
+  "draft": [
+    {
+      "id": "E1",
+      "language": "en",
+      "source": ["s1"],
+      "meaningId": "m-key-here",
+      "text": "Here is the key.",
+      "approvedShortForms": ["Here it is."]
+    },
+    {
+      "id": "E2",
+      "language": "en",
+      "source": ["s2", "s3"],
+      "meaningId": "m-deny-light",
+      "segments": [
+        { "requires": ["s2"], "text": "I did not take it." },
+        { "requires": ["s3"], "text": "The light will reveal it." }
+      ],
+      "approvedShortForms": ["I didn't."]
+    },
+    {
+      "id": "E4",
+      "language": "en",
+      "source": ["s4"],
+      "meaningId": "m-key-here",
+      "text": "Here is the key."
+    },
+    {
+      "id": "E5",
+      "language": "en",
+      "source": ["s5"],
+      "meaningId": "m-long-line",
+      "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable."
+    },
+    {
+      "id": "E6",
+      "language": "en",
+      "source": ["s6"],
+      "meaningId": "m-end",
+      "text": "The end."
+    }
+  ],
+  "devices": [
+    {
+      "id": "side-en",
+      "language": "en",
+      "columns": 22,
+      "lines": 2,
+      "minHoldMs": 1100,
+      "unit": "Unicode code points"
+    },
+    {
+      "id": "side-zh",
+      "language": "zh",
+      "columns": 10,
+      "lines": 2,
+      "minHoldMs": 900,
+      "unit": "Unicode code points"
+    }
+  ],
+  "cues": [
+    { "at": 1200, "kind": "heard", "text": "钥匙在这儿。" },
+    { "at": 2000, "kind": "director", "text": "skip sec-deny" },
+    { "at": 2800, "kind": "heard", "text": "开灯就能看见。" },
+    { "at": 4000, "kind": "heard", "text": "钥匙在这里。" },
+    { "at": 5200, "kind": "heard", "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。" },
+    { "at": 6400, "kind": "heard", "text": "终场。" },
+    { "at": 7200, "kind": "director", "text": "encore s4" },
+    { "at": 7400, "kind": "director", "text": "encore s1" },
+    { "at": 8000, "kind": "heard", "text": "钥匙在这儿。" },
+    { "at": 8600, "kind": "director", "text": "resolve s1" },
+    { "at": 9400, "kind": "heard", "text": "我完全没印象。" },
+    { "at": 10000, "kind": "director", "text": "blank" }
+  ]
+}

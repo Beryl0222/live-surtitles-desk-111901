@@ -1,0 +1,1244 @@
+{
+  "runId": "branch-run-2026-11-19T18-40-55-500Z-at2-2026-11-19T18-40-55-632Z",
+  "branchOf": "run-2026-11-19T18-40-55-500Z",
+  "version": "show-sample",
+  "revision": 1,
+  "cues": [
+    {
+      "at": 1200,
+      "kind": "heard",
+      "text": "钥匙在这儿。"
+    },
+    {
+      "at": 2000,
+      "kind": "director",
+      "text": "skip sec-deny"
+    },
+    {
+      "at": 2800,
+      "kind": "heard",
+      "text": "开灯就能看见。"
+    },
+    {
+      "at": 4000,
+      "kind": "heard",
+      "text": "钥匙在这里。"
+    },
+    {
+      "at": 5200,
+      "kind": "heard",
+      "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。"
+    },
+    {
+      "at": 6400,
+      "kind": "heard",
+      "text": "终场。"
+    },
+    {
+      "at": 7200,
+      "kind": "director",
+      "text": "encore s4"
+    },
+    {
+      "at": 7400,
+      "kind": "director",
+      "text": "encore s1"
+    },
+    {
+      "at": 8000,
+      "kind": "heard",
+      "text": "钥匙在这儿。"
+    },
+    {
+      "at": 8600,
+      "kind": "director",
+      "text": "resolve s1"
+    },
+    {
+      "at": 9400,
+      "kind": "heard",
+      "text": "我完全没印象。"
+    },
+    {
+      "at": 10000,
+      "kind": "director",
+      "text": "blank"
+    }
+  ],
+  "engineLog": [
+    {
+      "seq": 0,
+      "type": "line-confirmed",
+      "at": 1200,
+      "lineId": "s1",
+      "occurrenceNo": 1,
+      "heard": "钥匙在这儿。",
+      "shortForm": null,
+      "scene": "门厅",
+      "speaker": "甲"
+    },
+    {
+      "seq": 1,
+      "type": "publish",
+      "at": 1200,
+      "renderSeq": 1,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E1:0:m-key-here#0",
+              "itemKey": "E1:0:m-key-here",
+              "renderSeq": 1,
+              "text": "Here is the key.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "Here is the key."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s1:1#0",
+              "itemKey": "zh:s1:1",
+              "renderSeq": 1,
+              "text": "钥匙在这里。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "钥匙在这里。"
+              ],
+              "sourceLine": "s1"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 2,
+      "type": "section-skipped",
+      "at": 2000,
+      "sectionId": "sec-deny",
+      "blockedEdges": [
+        "s1->s2",
+        "s1->s3"
+      ],
+      "removedFromFrontier": [
+        "s2"
+      ],
+      "removedActive": [],
+      "reachable": [
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s1"
+      ]
+    },
+    {
+      "seq": 3,
+      "type": "publish",
+      "at": 2000,
+      "renderSeq": 2,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E1:0:m-key-here#0",
+              "itemKey": "E1:0:m-key-here",
+              "renderSeq": 2,
+              "text": "Here is the key.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "Here is the key."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s1:1#0",
+              "itemKey": "zh:s1:1",
+              "renderSeq": 2,
+              "text": "钥匙在这里。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "钥匙在这里。"
+              ],
+              "sourceLine": "s1"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": [],
+      "reason": "skip"
+    },
+    {
+      "seq": 4,
+      "type": "line-confirmed",
+      "at": 2800,
+      "lineId": "s3",
+      "occurrenceNo": 1,
+      "heard": "开灯就能看见。",
+      "shortForm": null,
+      "scene": "门厅",
+      "speaker": "甲"
+    },
+    {
+      "seq": 5,
+      "type": "publish",
+      "at": 2800,
+      "renderSeq": 3,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E2:1:m-deny-light#0",
+              "itemKey": "E2:1:m-deny-light",
+              "renderSeq": 3,
+              "text": "The light will reveal it.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "The light will reveal",
+                "it."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s3:1#0",
+              "itemKey": "zh:s3:1",
+              "renderSeq": 3,
+              "text": "开灯就能看见。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "开灯就能看见。"
+              ],
+              "sourceLine": "s3"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 6,
+      "type": "line-confirmed",
+      "at": 4000,
+      "lineId": "s4",
+      "occurrenceNo": 1,
+      "heard": "钥匙在这里。",
+      "shortForm": null,
+      "scene": "后场",
+      "speaker": "乙"
+    },
+    {
+      "seq": 7,
+      "type": "publish",
+      "at": 4000,
+      "renderSeq": 4,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E4:0:m-key-here#0",
+              "itemKey": "E4:0:m-key-here",
+              "renderSeq": 4,
+              "text": "Here is the key.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "Here is the key."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s4:1#0",
+              "itemKey": "zh:s4:1",
+              "renderSeq": 4,
+              "text": "钥匙在这里。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "钥匙在这里。"
+              ],
+              "sourceLine": "s4"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 8,
+      "type": "line-confirmed",
+      "at": 5200,
+      "lineId": "s5",
+      "occurrenceNo": 1,
+      "heard": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+      "shortForm": null,
+      "scene": "后场",
+      "speaker": "甲"
+    },
+    {
+      "seq": 9,
+      "type": "publish",
+      "at": 5200,
+      "renderSeq": 5,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E5:0:m-long-line#0",
+              "itemKey": "E5:0:m-long-line",
+              "renderSeq": 5,
+              "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+              "pageIndex": 0,
+              "pageCount": 5,
+              "lines": [
+                "This is a deliberately",
+                "long English line that"
+              ],
+              "sourceLine": null
+            },
+            {
+              "frameId": "E5:0:m-long-line#1",
+              "itemKey": "E5:0:m-long-line",
+              "renderSeq": 5,
+              "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+              "pageIndex": 1,
+              "pageCount": 5,
+              "lines": [
+                "must break into",
+                "several surtitle pages"
+              ],
+              "sourceLine": null
+            },
+            {
+              "frameId": "E5:0:m-long-line#2",
+              "itemKey": "E5:0:m-long-line",
+              "renderSeq": 5,
+              "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+              "pageIndex": 2,
+              "pageCount": 5,
+              "lines": [
+                "on a narrow side",
+                "screen while the"
+              ],
+              "sourceLine": null
+            },
+            {
+              "frameId": "E5:0:m-long-line#3",
+              "itemKey": "E5:0:m-long-line",
+              "renderSeq": 5,
+              "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+              "pageIndex": 3,
+              "pageCount": 5,
+              "lines": [
+                "minimum hold time",
+                "keeps every page"
+              ],
+              "sourceLine": null
+            },
+            {
+              "frameId": "E5:0:m-long-line#4",
+              "itemKey": "E5:0:m-long-line",
+              "renderSeq": 5,
+              "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+              "pageIndex": 4,
+              "pageCount": 5,
+              "lines": [
+                "actually readable."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s5:1#0",
+              "itemKey": "zh:s5:1",
+              "renderSeq": 5,
+              "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+              "pageIndex": 0,
+              "pageCount": 2,
+              "lines": [
+                "这是一句需要在窄屏上",
+                "断成多条的很长的中文"
+              ],
+              "sourceLine": "s5"
+            },
+            {
+              "frameId": "zh:s5:1#1",
+              "itemKey": "zh:s5:1",
+              "renderSeq": 5,
+              "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+              "pageIndex": 1,
+              "pageCount": 2,
+              "lines": [
+                "台词用来检验行宽行数",
+                "与停留时间限制。"
+              ],
+              "sourceLine": "s5"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 10,
+      "type": "line-confirmed",
+      "at": 6400,
+      "lineId": "s6",
+      "occurrenceNo": 1,
+      "heard": "终场。",
+      "shortForm": null,
+      "scene": "后场",
+      "speaker": "乙"
+    },
+    {
+      "seq": 11,
+      "type": "publish",
+      "at": 6400,
+      "renderSeq": 6,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E6:0:m-end#0",
+              "itemKey": "E6:0:m-end",
+              "renderSeq": 6,
+              "text": "The end.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "The end."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s6:1#0",
+              "itemKey": "zh:s6:1",
+              "renderSeq": 6,
+              "text": "终场。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "终场。"
+              ],
+              "sourceLine": "s6"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 12,
+      "type": "encore",
+      "at": 7200,
+      "lineId": "s4",
+      "nextOccurrence": 2
+    },
+    {
+      "seq": 13,
+      "type": "publish",
+      "at": 7200,
+      "renderSeq": 7,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E6:0:m-end#0",
+              "itemKey": "E6:0:m-end",
+              "renderSeq": 7,
+              "text": "The end.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "The end."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s6:1#0",
+              "itemKey": "zh:s6:1",
+              "renderSeq": 7,
+              "text": "终场。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "终场。"
+              ],
+              "sourceLine": "s6"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": [
+        {
+          "deviceId": "side-en",
+          "itemKey": "E4:0:m-key-here"
+        },
+        {
+          "deviceId": "side-zh",
+          "itemKey": "zh:s4:1"
+        }
+      ],
+      "reason": "encore"
+    },
+    {
+      "seq": 14,
+      "type": "encore",
+      "at": 7400,
+      "lineId": "s1",
+      "nextOccurrence": 2
+    },
+    {
+      "seq": 15,
+      "type": "publish",
+      "at": 7400,
+      "renderSeq": 8,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E6:0:m-end#0",
+              "itemKey": "E6:0:m-end",
+              "renderSeq": 8,
+              "text": "The end.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "The end."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s6:1#0",
+              "itemKey": "zh:s6:1",
+              "renderSeq": 8,
+              "text": "终场。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "终场。"
+              ],
+              "sourceLine": "s6"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": [
+        {
+          "deviceId": "side-en",
+          "itemKey": "E1:0:m-key-here"
+        },
+        {
+          "deviceId": "side-en",
+          "itemKey": "E4:0:m-key-here"
+        },
+        {
+          "deviceId": "side-zh",
+          "itemKey": "zh:s1:1"
+        },
+        {
+          "deviceId": "side-zh",
+          "itemKey": "zh:s4:1"
+        }
+      ],
+      "reason": "encore"
+    },
+    {
+      "seq": 16,
+      "type": "heard-ambiguous",
+      "at": 8000,
+      "heard": "钥匙在这儿。",
+      "candidates": [
+        "s1",
+        "s4"
+      ],
+      "displayable": {
+        "side-en": [
+          {
+            "key": "E2:1:m-deny-light",
+            "text": "The light will reveal it.",
+            "meaningId": "m-deny-light"
+          },
+          {
+            "key": "E5:0:m-long-line",
+            "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+            "meaningId": "m-long-line"
+          },
+          {
+            "key": "E6:0:m-end",
+            "text": "The end.",
+            "meaningId": "m-end"
+          }
+        ],
+        "side-zh": [
+          {
+            "key": "zh:s3:1",
+            "text": "开灯就能看见。"
+          },
+          {
+            "key": "zh:s5:1",
+            "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。"
+          },
+          {
+            "key": "zh:s6:1",
+            "text": "终场。"
+          }
+        ]
+      }
+    },
+    {
+      "seq": 17,
+      "type": "line-confirmed",
+      "at": 8600,
+      "lineId": "s1",
+      "occurrenceNo": 2,
+      "heard": "钥匙在这儿。",
+      "shortForm": null,
+      "scene": "门厅",
+      "speaker": "甲"
+    },
+    {
+      "seq": 18,
+      "type": "publish",
+      "at": 8600,
+      "renderSeq": 9,
+      "frames": [
+        {
+          "deviceId": "side-en",
+          "language": "en",
+          "pages": [
+            {
+              "frameId": "E1:0:m-key-here#0",
+              "itemKey": "E1:0:m-key-here",
+              "renderSeq": 9,
+              "text": "Here is the key.",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "Here is the key."
+              ],
+              "sourceLine": null
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "deviceId": "side-zh",
+          "language": "zh",
+          "pages": [
+            {
+              "frameId": "zh:s1:2#0",
+              "itemKey": "zh:s1:2",
+              "renderSeq": 9,
+              "text": "钥匙在这里。",
+              "pageIndex": 0,
+              "pageCount": 1,
+              "lines": [
+                "钥匙在这里。"
+              ],
+              "sourceLine": "s1"
+            }
+          ],
+          "blocked": []
+        }
+      ],
+      "stale": []
+    },
+    {
+      "seq": 19,
+      "type": "heard-unmatched",
+      "at": 9400,
+      "heard": "我完全没印象。",
+      "frontier": [
+        "s4"
+      ]
+    },
+    {
+      "seq": 20,
+      "type": "director-blank",
+      "at": 10000
+    }
+  ],
+  "scheduler": {
+    "side-en": {
+      "history": [
+        {
+          "frameId": "E2:1:m-deny-light#0",
+          "itemKey": "E2:1:m-deny-light",
+          "text": "The light will reveal it.",
+          "lines": [
+            "The light will reveal",
+            "it."
+          ],
+          "shownAt": 2800,
+          "minHoldMs": 1100
+        },
+        {
+          "frameId": "E4:0:m-key-here#0",
+          "itemKey": "E4:0:m-key-here",
+          "text": "Here is the key.",
+          "lines": [
+            "Here is the key."
+          ],
+          "shownAt": 3900,
+          "minHoldMs": 1100
+        },
+        {
+          "frameId": "E5:0:m-long-line#0",
+          "itemKey": "E5:0:m-long-line",
+          "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+          "lines": [
+            "This is a deliberately",
+            "long English line that"
+          ],
+          "shownAt": 5000,
+          "minHoldMs": 1100
+        },
+        {
+          "frameId": "E5:0:m-long-line#1",
+          "itemKey": "E5:0:m-long-line",
+          "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+          "lines": [
+            "must break into",
+            "several surtitle pages"
+          ],
+          "shownAt": 6100,
+          "minHoldMs": 1100
+        },
+        {
+          "frameId": "E5:0:m-long-line#2",
+          "itemKey": "E5:0:m-long-line",
+          "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+          "lines": [
+            "on a narrow side",
+            "screen while the"
+          ],
+          "shownAt": 7200,
+          "minHoldMs": 1100
+        },
+        {
+          "frameId": "E6:0:m-end#0",
+          "itemKey": "E6:0:m-end",
+          "text": "The end.",
+          "lines": [
+            "The end."
+          ],
+          "shownAt": 8300,
+          "minHoldMs": 1100
+        },
+        {
+          "frameId": "E1:0:m-key-here#0",
+          "itemKey": "E1:0:m-key-here",
+          "text": "Here is the key.",
+          "lines": [
+            "Here is the key."
+          ],
+          "shownAt": 9400,
+          "minHoldMs": 1100
+        }
+      ],
+      "dropped": [
+        {
+          "frameId": "E5:0:m-long-line#3",
+          "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+          "at": 7200,
+          "reason": "返场重排"
+        },
+        {
+          "frameId": "E5:0:m-long-line#4",
+          "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+          "at": 7200,
+          "reason": "返场重排"
+        },
+        {
+          "frameId": "E6:0:m-end#0",
+          "text": "The end.",
+          "at": 7200,
+          "reason": "返场重排"
+        },
+        {
+          "frameId": "E6:0:m-end#0",
+          "text": "The end.",
+          "at": 7400,
+          "reason": "返场重排"
+        }
+      ],
+      "finalFrame": {
+        "frameId": "E1:0:m-key-here#0",
+        "text": "Here is the key."
+      }
+    },
+    "side-zh": {
+      "history": [
+        {
+          "frameId": "zh:s3:1#0",
+          "itemKey": "zh:s3:1",
+          "text": "开灯就能看见。",
+          "lines": [
+            "开灯就能看见。"
+          ],
+          "shownAt": 2800,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s4:1#0",
+          "itemKey": "zh:s4:1",
+          "text": "钥匙在这里。",
+          "lines": [
+            "钥匙在这里。"
+          ],
+          "shownAt": 3700,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s5:1#0",
+          "itemKey": "zh:s5:1",
+          "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+          "lines": [
+            "这是一句需要在窄屏上",
+            "断成多条的很长的中文"
+          ],
+          "shownAt": 4600,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s5:1#1",
+          "itemKey": "zh:s5:1",
+          "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+          "lines": [
+            "台词用来检验行宽行数",
+            "与停留时间限制。"
+          ],
+          "shownAt": 5500,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s6:1#0",
+          "itemKey": "zh:s6:1",
+          "text": "终场。",
+          "lines": [
+            "终场。"
+          ],
+          "shownAt": 6400,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s6:1#0",
+          "itemKey": "zh:s6:1",
+          "text": "终场。",
+          "lines": [
+            "终场。"
+          ],
+          "shownAt": 7300,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s6:1#0",
+          "itemKey": "zh:s6:1",
+          "text": "终场。",
+          "lines": [
+            "终场。"
+          ],
+          "shownAt": 8200,
+          "minHoldMs": 900
+        },
+        {
+          "frameId": "zh:s1:2#0",
+          "itemKey": "zh:s1:2",
+          "text": "钥匙在这里。",
+          "lines": [
+            "钥匙在这里。"
+          ],
+          "shownAt": 9100,
+          "minHoldMs": 900,
+          "clearedAt": 10000
+        }
+      ],
+      "dropped": [],
+      "finalFrame": null
+    }
+  },
+  "timeline": [
+    {
+      "at": 2800,
+      "kind": "publish",
+      "eventSeq": 5,
+      "updates": [
+        {
+          "deviceId": "side-en",
+          "at": 2800,
+          "frame": {
+            "frameId": "E2:1:m-deny-light#0",
+            "itemKey": "E2:1:m-deny-light",
+            "renderSeq": 3,
+            "text": "The light will reveal it.",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "The light will reveal",
+              "it."
+            ],
+            "sourceLine": null,
+            "enqueuedAt": 2800,
+            "blockedReasons": []
+          }
+        },
+        {
+          "deviceId": "side-zh",
+          "at": 2800,
+          "frame": {
+            "frameId": "zh:s3:1#0",
+            "itemKey": "zh:s3:1",
+            "renderSeq": 3,
+            "text": "开灯就能看见。",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "开灯就能看见。"
+            ],
+            "sourceLine": "s3",
+            "enqueuedAt": 2800,
+            "blockedReasons": []
+          }
+        }
+      ]
+    },
+    {
+      "at": 4000,
+      "kind": "publish",
+      "eventSeq": 7,
+      "updates": [
+        {
+          "deviceId": "side-en",
+          "at": 3900,
+          "frame": {
+            "frameId": "E4:0:m-key-here#0",
+            "itemKey": "E4:0:m-key-here",
+            "renderSeq": 4,
+            "text": "Here is the key.",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "Here is the key."
+            ],
+            "sourceLine": null,
+            "enqueuedAt": 4000,
+            "blockedReasons": []
+          }
+        },
+        {
+          "deviceId": "side-zh",
+          "at": 3700,
+          "frame": {
+            "frameId": "zh:s4:1#0",
+            "itemKey": "zh:s4:1",
+            "renderSeq": 4,
+            "text": "钥匙在这里。",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "钥匙在这里。"
+            ],
+            "sourceLine": "s4",
+            "enqueuedAt": 4000,
+            "blockedReasons": []
+          }
+        }
+      ]
+    },
+    {
+      "at": 5200,
+      "kind": "publish",
+      "eventSeq": 9,
+      "updates": [
+        {
+          "deviceId": "side-en",
+          "at": 5000,
+          "frame": {
+            "frameId": "E5:0:m-long-line#0",
+            "itemKey": "E5:0:m-long-line",
+            "renderSeq": 5,
+            "text": "This is a deliberately long English line that must break into several surtitle pages on a narrow side screen while the minimum hold time keeps every page actually readable.",
+            "pageIndex": 0,
+            "pageCount": 5,
+            "lines": [
+              "This is a deliberately",
+              "long English line that"
+            ],
+            "sourceLine": null,
+            "enqueuedAt": 5200,
+            "blockedReasons": []
+          }
+        },
+        {
+          "deviceId": "side-zh",
+          "at": 4600,
+          "frame": {
+            "frameId": "zh:s5:1#0",
+            "itemKey": "zh:s5:1",
+            "renderSeq": 5,
+            "text": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+            "pageIndex": 0,
+            "pageCount": 2,
+            "lines": [
+              "这是一句需要在窄屏上",
+              "断成多条的很长的中文"
+            ],
+            "sourceLine": "s5",
+            "enqueuedAt": 5200,
+            "blockedReasons": []
+          }
+        }
+      ]
+    },
+    {
+      "at": 6400,
+      "kind": "publish",
+      "eventSeq": 11,
+      "updates": [
+        {
+          "deviceId": "side-zh",
+          "at": 6400,
+          "frame": {
+            "frameId": "zh:s6:1#0",
+            "itemKey": "zh:s6:1",
+            "renderSeq": 6,
+            "text": "终场。",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "终场。"
+            ],
+            "sourceLine": "s6",
+            "enqueuedAt": 6400,
+            "blockedReasons": []
+          }
+        }
+      ]
+    },
+    {
+      "at": 7200,
+      "kind": "publish",
+      "eventSeq": 13,
+      "updates": []
+    },
+    {
+      "at": 7400,
+      "kind": "publish",
+      "eventSeq": 15,
+      "updates": []
+    },
+    {
+      "at": 8600,
+      "kind": "publish",
+      "eventSeq": 18,
+      "updates": []
+    },
+    {
+      "at": 9400,
+      "kind": "held-release",
+      "updates": [
+        {
+          "deviceId": "side-en",
+          "at": 9400,
+          "frame": {
+            "frameId": "E1:0:m-key-here#0",
+            "itemKey": "E1:0:m-key-here",
+            "renderSeq": 9,
+            "text": "Here is the key.",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "Here is the key."
+            ],
+            "sourceLine": null,
+            "enqueuedAt": 8600,
+            "blockedReasons": []
+          }
+        },
+        {
+          "deviceId": "side-zh",
+          "at": 9100,
+          "frame": {
+            "frameId": "zh:s1:2#0",
+            "itemKey": "zh:s1:2",
+            "renderSeq": 9,
+            "text": "钥匙在这里。",
+            "pageIndex": 0,
+            "pageCount": 1,
+            "lines": [
+              "钥匙在这里。"
+            ],
+            "sourceLine": "s1",
+            "enqueuedAt": 8600,
+            "blockedReasons": []
+          }
+        }
+      ]
+    },
+    {
+      "at": 10000,
+      "kind": "blank-result",
+      "result": {
+        "blanked": false,
+        "at": 10000,
+        "reason": "director",
+        "pending": [
+          {
+            "deviceId": "side-en",
+            "eligibleAt": 10500
+          }
+        ]
+      }
+    }
+  ],
+  "finalState": {
+    "runId": "branch-run-2026-11-19T18-40-55-500Z-at2-2026-11-19T18-40-55-632Z",
+    "branchOf": "run-2026-11-19T18-40-55-500Z",
+    "ended": false,
+    "frontier": [
+      "s4"
+    ],
+    "activeSpoken": [
+      "s3",
+      "s5",
+      "s6",
+      "s1"
+    ],
+    "blockedEdges": [
+      "s1->s2",
+      "s1->s3"
+    ],
+    "spoken": [
+      {
+        "lineId": "s1",
+        "occurrenceNo": 1,
+        "heard": "钥匙在这儿。",
+        "at": 1200,
+        "shortForm": null
+      },
+      {
+        "lineId": "s3",
+        "occurrenceNo": 1,
+        "heard": "开灯就能看见。",
+        "at": 2800,
+        "shortForm": null
+      },
+      {
+        "lineId": "s4",
+        "occurrenceNo": 1,
+        "heard": "钥匙在这里。",
+        "at": 4000,
+        "shortForm": null
+      },
+      {
+        "lineId": "s5",
+        "occurrenceNo": 1,
+        "heard": "这是一句需要在窄屏上断成多条的很长的中文台词用来检验行宽行数与停留时间限制。",
+        "at": 5200,
+        "shortForm": null
+      },
+      {
+        "lineId": "s6",
+        "occurrenceNo": 1,
+        "heard": "终场。",
+        "at": 6400,
+        "shortForm": null
+      },
+      {
+        "lineId": "s1",
+        "occurrenceNo": 2,
+        "heard": "钥匙在这儿。",
+        "at": 8600,
+        "shortForm": null
+      }
+    ],
+    "ambiguity": null,
+    "revisionNotes": []
+  }
+}

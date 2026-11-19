@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>侧幕投屏</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="screen-body">
+<div id="screen" class="screen">
+  <div id="lines"></div>
+  <div id="meta" class="screen-meta"></div>
+</div>
+<script>
+const params = new URLSearchParams(location.search);
+const deviceId = params.get('device') || 'side-zh';
+document.title = `投屏 · ${deviceId}`;
+const linesEl = document.getElementById('lines');
+const metaEl = document.getElementById('meta');
+
+function render(state) {
+  const screen = state.screens.find((s) => s.deviceId === deviceId);
+  const device = state.devices.find((d) => d.id === deviceId);
+  if (!screen) return;
+  if (screen.frame) {
+    linesEl.innerHTML = screen.frame.lines.map((l) => `<div class="sline">${escapeHtml(l)}</div>`).join('');
+    const wait = Math.max(0, screen.minHoldMs - (Date.now() - screen.shownAt));
+    metaEl.textContent = `${deviceId} · ${screen.frame.frameId} · 行宽${device.columns}/${device.lines}行 · 最短停留${device.minHoldMs}ms${wait ? `（${wait}ms 内不可切换）` : ''}`;
+  } else {
+    linesEl.innerHTML = '<div class="sline blank">（空屏）</div>';
+    metaEl.textContent = `${deviceId} · 空屏 · 排队 ${screen.queueLength} 帧`;
+  }
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+const es = new EventSource('/api/events');
+es.onmessage = (e) => render(JSON.parse(e.data));
+setInterval(() => fetch('/api/tick', { method: 'POST' }).then((r) => r.json()).then(render), 250);
+</script>
+</body>
+</html>
