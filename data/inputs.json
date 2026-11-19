@@ -1,0 +1,93 @@
+{
+  "script": [
+    {
+      "id": "s1",
+      "scene": "门厅",
+      "speaker": "甲",
+      "text": "钥匙在这里。",
+      "next": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "s2",
+      "scene": "门厅",
+      "speaker": "乙",
+      "text": "不是我拿的。钥匙在这里。",
+      "next": [
+        "s4"
+      ]
+    },
+    {
+      "id": "s3",
+      "scene": "门厅",
+      "speaker": "甲",
+      "text": "开灯就能看见。",
+      "next": [
+        "s4"
+      ]
+    },
+    {
+      "id": "s4",
+      "scene": "后场",
+      "speaker": "乙",
+      "text": "钥匙在这里。",
+      "next": []
+    }
+  ],
+  "draft": [
+    {
+      "id": "E1",
+      "language": "en",
+      "source": [
+        "s1"
+      ],
+      "text": "Here is the key."
+    },
+    {
+      "id": "E2",
+      "language": "en",
+      "source": [
+        "s2",
+        "s3"
+      ],
+      "text": "I did not take it. The light will reveal it."
+    }
+  ],
+  "devices": [
+    {
+      "id": "side-en",
+      "language": "en",
+      "columns": 22,
+      "lines": 2,
+      "minHoldMs": 1100,
+      "unit": "Unicode code points"
+    },
+    {
+      "id": "side-zh",
+      "language": "zh",
+      "columns": 10,
+      "lines": 2,
+      "minHoldMs": 900,
+      "unit": "Unicode code points"
+    }
+  ],
+  "cues": [
+    {
+      "at": 1200,
+      "kind": "heard",
+      "text": "钥匙在这儿。"
+    },
+    {
+      "at": 2080,
+      "kind": "heard",
+      "text": "钥匙在这里。"
+    },
+    {
+      "at": 2890,
+      "kind": "director",
+      "text": "门厅乙句略过，直接开灯。"
+    }
+  ]
+}
